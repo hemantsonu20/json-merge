@@ -1,0 +1,23 @@
+[
+  {
+    "level1": {
+      "key1": "SrcValue1"
+    }
+  },
+  {
+    "level1": {
+      "key1": "targetValue1",
+      "level2": {
+        "key2": "value2"
+      }
+    }
+  },
+  {
+    "level1": {
+      "key1": "SrcValue1",
+      "level2": {
+        "key2": "value2"
+      }
+    }
+  }
+]

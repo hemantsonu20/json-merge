@@ -1,0 +1,22 @@
+[
+  {
+    "level1": {
+      "key1": "value1"
+    }
+  },
+  {
+    "level1": {
+      "level2": {
+        "key2": "value2"
+      }
+    }
+  },
+  {
+    "level1": {
+      "key1": "value1",
+      "level2": {
+        "key2": "value2"
+      }
+    }
+  }
+]

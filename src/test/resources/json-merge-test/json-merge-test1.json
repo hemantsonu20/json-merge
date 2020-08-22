@@ -1,0 +1,12 @@
+[
+  {
+    "name": "json-merge"
+  },
+  {
+    "age": 18
+  },
+  {
+    "name": "json-merge",
+    "age": 18
+  }
+]

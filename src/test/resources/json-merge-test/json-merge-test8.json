@@ -1,0 +1,15 @@
+[
+  {
+    "name": {
+      "level2": "level2Val"
+    }
+  },
+  {
+    "name": "json-merge"
+  },
+  {
+    "name": {
+      "level2": "level2Val"
+    }
+  }
+]

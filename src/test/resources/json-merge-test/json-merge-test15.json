@@ -1,0 +1,48 @@
+[
+  {
+    "level1": {
+      "level2": {
+        "key1": "value1",
+        "key2": "value2",
+        "key3": "srcValue3",
+        "level3": {
+          "key1": "srcValue1",
+          "key9": 0.0001
+        },
+        "key10": "value10"
+      }
+    }
+  },
+  {
+    "level1": {
+      "level2": {
+        "key1": "value1",
+        "key2": "value2",
+        "key3": "value3",
+        "level3": {
+          "key1": "value1",
+          "key2": "value2"
+        },
+        "key4": 1,
+        "key5": false
+      }
+    }
+  },
+  {
+    "level1": {
+      "level2": {
+        "key1": "value1",
+        "key2": "value2",
+        "key3": "srcValue3",
+        "level3": {
+          "key1": "srcValue1",
+          "key2": "value2",
+          "key9": 0.0001
+        },
+        "key4": 1,
+        "key5": false,
+        "key10": "value10"
+      }
+    }
+  }
+]

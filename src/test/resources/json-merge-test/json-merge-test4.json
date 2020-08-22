@@ -1,0 +1,13 @@
+[
+  {
+    "name": "json-merge-src"
+  },
+  {
+    "name": {
+      "level2": "level2Val"
+    }
+  },
+  {
+    "name": "json-merge-src"
+  }
+]

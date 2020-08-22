@@ -1,0 +1,19 @@
+[
+  {
+    "name": {
+      "level2": "level2Val"
+    }
+  },
+  {
+    "name": [
+      "test1",
+      "test2",
+      "test3"
+    ]
+  },
+  {
+    "name": {
+      "level2": "level2Val"
+    }
+  }
+]

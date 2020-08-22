@@ -1,0 +1,15 @@
+[
+  {
+    "name": "json-merge-src"
+  },
+  {
+    "name": [
+      "test1",
+      "test2",
+      "test3"
+    ]
+  },
+  {
+    "name": "json-merge-src"
+  }
+]
