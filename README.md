@@ -12,6 +12,7 @@ This library merges two json of any nested level into a single json following be
     | JSON Value<sup>1</sup> | Src              | Src               | Src               |
     | JSON Array             | Src<sup>2</sup>  | Merge             | Src               |
     | JSON Object            | Src              | Src               | Merge<sup>3</sup> |
+    
     <sup>**1**</sup> Json Value denotes boolean, number or string value in json.  
     <sup>**2**</sup> Src denotes `Src` value will be copied.  
     <sup>**3**</sup> Merge denotes both `Src` and `Target` values will be merged.
