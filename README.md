@@ -4,7 +4,7 @@ A light weight library to merge two json objects into a single json object.
 ## Description
 This library merges two json of any nested level into a single json following below logic.
 
-* When keys are different, both keys with there value will be copied at same level.
+* When keys are different, both keys with there values will be copied at same level.
 * When keys are same at some level, following table denotes what value will be used.
 
     | Src / Target           | JSON Value       | JSON Array        | JSON Object       |
