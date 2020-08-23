@@ -1,7 +1,9 @@
+![Java CI with Maven](https://github.com/hemantsonu20/node-hapi-js/workflows/Java%20CI%20with%20Maven/badge.svg)
+
 # json-merge
 A light weight library to merge two json objects into a single json object.
 
-## Description
+## Overview
 This library merges two json of any nested level into a single json following below logic.
 
 * When keys are different, both keys with there values will be copied at same level.
@@ -87,6 +89,16 @@ String output = JsonMerge.merge(srcJsonStr, targetJsonStr);
 
 For more examples see, [test json files](/src/test/resources/json-merge-test).   
 <small>Each test json file contains a json array of three json objects, first is src, second is target and third is output json.</small>
+
+## Maven Artifact
+This library is released to maven central.
+```xml
+<dependency>
+  <groupId>com.github.hemantsonu20</groupId>
+  <artifactId>json-merge</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
 ## License
 [Apache License Version 2.0](/LICENSE)
