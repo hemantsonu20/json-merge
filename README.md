@@ -1,4 +1,4 @@
-![Java CI with Maven](https://github.com/hemantsonu20/node-hapi-js/workflows/Java%20CI%20with%20Maven/badge.svg)
+![Java CI with Maven](https://github.com/hemantsonu20/json-merge/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 # json-merge
 A light weight library to merge two json objects into a single json object.
