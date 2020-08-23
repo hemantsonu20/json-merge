@@ -4,7 +4,7 @@
 
     <groupId>com.github.hemantsonu20</groupId>
     <artifactId>json-merge</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>json-merge</name>
     <description>A library to merge different json objects into a single json objects.</description>
 
@@ -25,7 +25,7 @@
     <scm>
         <connection>scm:git:git@github.com:hemantsonu20/json-merge.git</connection>
         <developerConnection>scm:git:git@github.com:hemantsonu20/json-merge.git</developerConnection>
-        <tag>json-merge-1.0.0</tag>
+        <tag>${project.version}</tag>
         <url>https://github.com/hemantsonu20/json-merge</url>
     </scm>
 
