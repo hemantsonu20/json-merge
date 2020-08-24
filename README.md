@@ -1,4 +1,5 @@
 ![Java CI with Maven](https://github.com/hemantsonu20/node-hapi-js/workflows/Java%20CI%20with%20Maven/badge.svg)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.hemantsonu20/json-merge/badge.svg)](https://maven-badges.herokuapp.com/com.github.hemantsonu20/json-merge)
 
 # json-merge
 A light weight library to merge two json objects into a single json object.
@@ -98,6 +99,12 @@ This library is released to maven central.
   <artifactId>json-merge</artifactId>
   <version>1.0.0</version>
 </dependency>
+```
+
+## Development
+```
+$ git clone git@github.com:hemantsonu20/json-merge.git
+$ ./mvnw clean install
 ```
 
 ## License
