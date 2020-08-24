@@ -107,5 +107,9 @@ $ git clone git@github.com:hemantsonu20/json-merge.git
 $ ./mvnw clean install
 ```
 
+## Documentation
+Javadoc for this repository is available [here](https://hemantsonu20.github.io/json-merge/apidocs/).  
+It has been deployed using github pages.
+
 ## License
 [Apache License Version 2.0](/LICENSE)
