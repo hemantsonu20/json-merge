@@ -29,3 +29,5 @@ jobs:
           git add -f docs/
           git commit -m "[ci skip] javadoc publish via github workflow"
           git push
+      env:
+        GITHUB\_TOKEN: ${{ secrets.WORKFLOW_ACCESS_TOKEN }}
