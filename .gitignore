@@ -2,6 +2,7 @@
 *.class
 .idea
 target/
+docs/
 # Log file
 *.log
 

@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
@@ -22,3 +22,10 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: ./mvnw -B clean install
+    - name: Publish Javadoc
+    - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add docs/
+          git commit -m "[ci skip] javadoc publish via github workflow"
+          git push
