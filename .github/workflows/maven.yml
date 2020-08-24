@@ -28,6 +28,6 @@ jobs:
       run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add docs/
+          git add -f docs/
           git commit -m "[ci skip] javadoc publish via github workflow"
           git push
