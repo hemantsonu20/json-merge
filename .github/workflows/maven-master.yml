@@ -8,8 +8,6 @@ on:
     paths-ignore:
     - 'README.md'
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
@@ -25,7 +23,6 @@ jobs:
     - name: Build with Maven
       run: ./mvnw -B clean install
     - name: Publish Javadoc
-      if: 
       run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
