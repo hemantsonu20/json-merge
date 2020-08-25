@@ -1,5 +1,4 @@
 ![Java CI with Maven](https://github.com/hemantsonu20/json-merge/workflows/Java%20CI%20with%20Maven/badge.svg)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.hemantsonu20/json-merge/badge.svg)](https://maven-badges.herokuapp.com/com.github.hemantsonu20/json-merge)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.hemantsonu20/json-merge.svg?label=Maven%20Central&color=brightgreen)](https://search.maven.org/search?q=g:%22com.github.hemantsonu20%22%20AND%20a:%22json-merge%22)
 
 # json-merge
