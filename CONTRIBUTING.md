@@ -1,17 +1,31 @@
 # Contributing
+First main rule is don't overthink. Anything is counted as contribution.
+* Filing an issue if you found a bug or request a feature / enhancement.
+* Providing your input / views on any existing issues.
+* Reviewing any opened pull requests (even if you are not an assignee).
+* And obviously if you want to make changes directly into the repository.
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+When contributing directly to this repository, please first discuss the change you wish to make via [creating
+an issue](https://github.com/hemantsonu20/json-merge/issues/new) before making a change.
 
-## Pull Request Process
+## Development Setup
+1. Install Java (8 or above) and git on your system.
+2. Fork the repository and clone it to your local system. ([guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo))
+3. Run `./mvnw clean install` to donwload all maven dependencies.
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you
+## Code Changes
+
+1. Implement new feature or fix bug in the code.
+2. Write sufficient test cases to validate your new code changes.
+3. Explain your code via adding or updating comments and javadocs.
+4. Update the README.md with details of changes to the interface (if required).
+5. Run ./mvnw clean install` to ensure enverthing works fine.
+
+## Pull Request
+1. Commit your local changes to your fork repo.
+2. Open a pull request on the main repo.
+3. Just sit and relax. Someone will reach out to you if anything required from your side.
+
+## Code of Conduct
+Please note we have a [code of conduct](/CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.

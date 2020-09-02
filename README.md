@@ -21,6 +21,15 @@ This library merges two json of any nested level into a single json following be
     <sup>**2**</sup> Src denotes `Src` value will be copied.  
     <sup>**3**</sup> Merge denotes both `Src` and `Target` values will be merged.
     
+## Maven Artifact
+To use this library add below to your dependencies in `pom.xml`.
+```xml
+<dependency>
+  <groupId>com.github.hemantsonu20</groupId>
+  <artifactId>json-merge</artifactId>
+  <version>1.0.2</version>
+</dependency>
+```
 
 ## Usage
 This library exposes below method. It accepts source and target json and returns the merged json.
@@ -92,25 +101,12 @@ String output = JsonMerge.merge(srcJsonStr, targetJsonStr);
 For more examples see, [test json files](/src/test/resources/json-merge-test).   
 <small>Each test json file contains a json array of three json objects, first is src, second is target and third is output json.</small>
 
-## Maven Artifact
-This library is released to maven central.
-```xml
-<dependency>
-  <groupId>com.github.hemantsonu20</groupId>
-  <artifactId>json-merge</artifactId>
-  <version>1.0.2</version>
-</dependency>
-```
-
-## Development
-```
-$ git clone git@github.com:hemantsonu20/json-merge.git
-$ ./mvnw clean install
-```
-
 ## Documentation
 * Javadoc Releases are available at [javadoc.io](https://javadoc.io/doc/com.github.hemantsonu20/json-merge). (See javadoc badge above)
 * Javadoc for latest code available via github pages [here](https://hemantsonu20.github.io/json-merge/apidocs/).
+
+## Contributing
+[See Contributing Guidelines](/CONTRIBUTING.md)
 
 ## License
 [Apache License Version 2.0](/LICENSE)
