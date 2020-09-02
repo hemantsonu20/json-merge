@@ -6,8 +6,8 @@ First main rule is don't overthink. Anything is counted as contribution.
 * And obviously if you want to make changes directly into the repository.
 
 
-When contributing directly to this repository, please first discuss the change you wish to make via [creating
-an issue](https://github.com/hemantsonu20/json-merge/issues/new) before making a change.
+When contributing directly to this repository, please first discuss the change you wish to make via creating
+an issue before making a change.
 
 ## Development Setup
 1. Install Java (8 or above) and git on your system.
