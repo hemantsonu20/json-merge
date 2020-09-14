@@ -4,22 +4,20 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.NullNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.util.Iterator;
 import java.util.Map;
 
 /**
- *
  * This class provides methods to merge two json of any nested level into a single json.
- *
  */
 public class JsonMerge {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     /**
-     *
      * Method to merge two json objects into single json object.
      *
      * <p>It merges two json of any nested level into a single json following below logic.</p>
@@ -124,8 +122,8 @@ public class JsonMerge {
     public static String merge(String srcJsonStr, String targetJsonStr) {
 
         try {
-            JsonNode srcNode = OBJECT_MAPPER.readTree(srcJsonStr);
-            JsonNode targetNode = OBJECT_MAPPER.readTree(targetJsonStr);
+            JsonNode srcNode = (srcJsonStr == null) ? NullNode.getInstance() : OBJECT_MAPPER.readTree(srcJsonStr);
+            JsonNode targetNode = (targetJsonStr == null) ? NullNode.getInstance() : OBJECT_MAPPER.readTree(targetJsonStr);
             JsonNode result = merge(srcNode, targetNode);
             return OBJECT_MAPPER.writeValueAsString(result);
         } catch (JsonProcessingException e) {
