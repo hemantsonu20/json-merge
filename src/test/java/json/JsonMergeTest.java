@@ -42,6 +42,15 @@ public class JsonMergeTest {
                 String targetJsonStr = OBJECT_MAPPER.writeValueAsString(testData.get(1));
                 JsonNode expectedMergedNode = testData.get(2);
 
+                // null is a valid json, so for test cases while reading null from file, its getting read  "null" (as string).
+                // modify values here to treat "null" as string to null.
+                if("null".equals(srcJsonStr)) {
+                    srcJsonStr = null;
+                }
+                if("null".equals(targetJsonStr)) {
+                    targetJsonStr = null;
+                }
+
                 String actualMergedJsonStr = JsonMerge.merge(srcJsonStr, targetJsonStr);
                 JsonNode actualMergedNode = OBJECT_MAPPER.readTree(actualMergedJsonStr);
 
