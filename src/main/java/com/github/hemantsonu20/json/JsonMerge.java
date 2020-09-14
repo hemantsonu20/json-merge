@@ -122,8 +122,8 @@ public class JsonMerge {
     public static String merge(String srcJsonStr, String targetJsonStr) {
 
         try {
-            JsonNode srcNode = (srcJsonStr == null) ? NullNode.getInstance() : OBJECT_MAPPER.readTree(srcJsonStr);
-            JsonNode targetNode = (targetJsonStr == null) ? NullNode.getInstance() : OBJECT_MAPPER.readTree(targetJsonStr);
+            JsonNode srcNode = OBJECT_MAPPER.readTree(srcJsonStr);
+            JsonNode targetNode = OBJECT_MAPPER.readTree(targetJsonStr);
             JsonNode result = merge(srcNode, targetNode);
             return OBJECT_MAPPER.writeValueAsString(result);
         } catch (JsonProcessingException e) {
