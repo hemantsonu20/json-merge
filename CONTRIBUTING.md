@@ -12,7 +12,7 @@ an issue before making a change.
 ## Development Setup
 1. Install Java (8 or above) and git on your system.
 2. Fork the repository and clone it to your local system. ([guide](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo))
-3. Run `./mvnw clean install` to donwload all maven dependencies.
+3. Run `./mvnw clean install` to download all maven dependencies.
 
 ## Code Changes
 
