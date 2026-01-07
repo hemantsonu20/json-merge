@@ -20,36 +20,37 @@ public class JsonMerge {
      *
      * <p>It merges two json of any nested level into a single json following below logic.</p>
      * <ul>
-     *   <li>When keys are different, both keys with there values will be copied at same level.</li>
+     *   <li>When keys are different, both keys with their values will be copied at same level.</li>
      *   <li>
      *     <p>When keys are same at some level, following table denotes what value will be used.</p>
-     *     <table border="1" summary="">
+     *     <table border="1">
+     *       <caption>Description</caption>
      *       <thead>
      *         <tr>
-     *           <th align="left">Src / Target</th>
-     *           <th align="left">JSON Value</th>
-     *           <th align="left">JSON Array</th>
-     *           <th align="left">JSON Object</th>
+     *           <th>Src / Target</th>
+     *           <th>JSON Value</th>
+     *           <th>JSON Array</th>
+     *           <th>JSON Object</th>
      *         </tr>
      *       </thead>
      *       <tbody>
      *         <tr>
-     *           <td align="left">JSON Value<sup>1</sup></td>
-     *           <td align="left">Src</td>
-     *           <td align="left">Src</td>
-     *           <td align="left">Src</td>
+     *           <td>JSON Value<sup>1</sup></td>
+     *           <td>Src</td>
+     *           <td>Src</td>
+     *           <td>Src</td>
      *         </tr>
      *         <tr>
-     *           <td align="left">JSON Array</td>
-     *           <td align="left">Src<sup>2</sup></td>
-     *           <td align="left">Merge</td>
-     *           <td align="left">Src</td>
+     *           <td>JSON Array</td>
+     *           <td>Src<sup>2</sup></td>
+     *           <td>Merge</td>
+     *           <td>Src</td>
      *         </tr>
      *         <tr>
-     *           <td align="left">JSON Object</td>
-     *           <td align="left">Src</td>
-     *           <td align="left">Src</td>
-     *           <td align="left">Merge<sup>3</sup></td>
+     *           <td>JSON Object</td>
+     *           <td>Src</td>
+     *           <td>Src</td>
+     *           <td>Merge<sup>3</sup></td>
      *         </tr>
      *       </tbody>
      *     </table>
@@ -61,8 +62,8 @@ public class JsonMerge {
      *   </li>
      * </ul>
      *
-     * <h2>Examples</h2>
-     * <h3>Example 1</h3>
+     * <h4>Examples</h4>
+     * <h5>Example 1</h5>
      * <p><strong>Source Json</strong></p>
      * <pre>{@code
      * {
@@ -81,7 +82,7 @@ public class JsonMerge {
      *   "name": "json-merge-src"
      * }
      * }</pre>
-     * <h3>Example 2</h3>
+     * <h5>Example 2</h5>
      * <p><strong>Source Json</strong></p>
      * <pre>{@code
      * {
