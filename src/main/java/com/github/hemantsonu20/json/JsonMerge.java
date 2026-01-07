@@ -1,13 +1,11 @@
 package com.github.hemantsonu20.json;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.NullNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.node.ArrayNode;
+import tools.jackson.databind.node.ObjectNode;
 
-import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -126,7 +124,7 @@ public class JsonMerge {
             JsonNode targetNode = OBJECT_MAPPER.readTree(targetJsonStr);
             JsonNode result = merge(srcNode, targetNode);
             return OBJECT_MAPPER.writeValueAsString(result);
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             throw new JsonMergeException("Unable to merge json", e);
         }
     }
@@ -155,11 +153,7 @@ public class JsonMerge {
 
         ObjectNode result = OBJECT_MAPPER.createObjectNode();
 
-        Iterator<Map.Entry<String, JsonNode>> srcItr = srcNode.fields();
-        while (srcItr.hasNext()) {
-
-            Map.Entry<String, JsonNode> entry = srcItr.next();
-
+        for (Map.Entry<String, JsonNode> entry : srcNode.properties()) {
             // check key in src json exists in target json or not at same level
             if (targetNode.has(entry.getKey())) {
                 result.set(entry.getKey(), merge(entry.getValue(), targetNode.get(entry.getKey())));
@@ -170,9 +164,7 @@ public class JsonMerge {
         }
 
         // copy fields from target json into result which were missing in src json
-        Iterator<Map.Entry<String, JsonNode>> targetItr = targetNode.fields();
-        while (targetItr.hasNext()) {
-            Map.Entry<String, JsonNode> entry = targetItr.next();
+        for (Map.Entry<String, JsonNode> entry : targetNode.properties()) {
             if (!result.has(entry.getKey())) {
                 result.set(entry.getKey(), entry.getValue());
             }
