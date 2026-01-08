@@ -27,7 +27,7 @@ To use this library add below to your dependencies in `pom.xml`.
 <dependency>
   <groupId>com.github.hemantsonu20</groupId>
   <artifactId>json-merge</artifactId>
-  <version>1.0.2</version>
+  <version>2.0.0</version>
 </dependency>
 ```
 
