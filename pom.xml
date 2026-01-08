@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>json-merge</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1-SNAPSHOT</version>
     <name>json-merge</name>
     <description>A lightweight library to merge two json objects into a single json object.</description>
 
@@ -24,7 +24,7 @@
     <scm>
         <connection>scm:git:https://github.com/hemantsonu20/json-merge.git</connection>
         <developerConnection>scm:git:https://github.com/hemantsonu20/json-merge.git</developerConnection>
-        <tag>v2.0.0</tag>
+        <tag>${project.version}</tag>
         <url>https://github.com/hemantsonu20/json-merge</url>
     </scm>
 
