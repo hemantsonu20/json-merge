@@ -1,6 +1,6 @@
 ![Java CI with Maven](https://github.com/hemantsonu20/json-merge/workflows/Java%20CI%20with%20Maven/badge.svg)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.hemantsonu20/json-merge.svg?label=Maven%20Central&color=brightgreen)](https://search.maven.org/search?q=g:%22com.github.hemantsonu20%22%20AND%20a:%22json-merge%22)
-[![javadoc](https://javadoc.io/badge2/com.github.hemantsonu20/json-merge/javadoc.svg)](https://javadoc.io/doc/com.github.hemantsonu20/json-merge)
+[![javadoc](https://javadoc.io/badge2/com.github.hemantsonu20/json-merge/javadoc.svg?v=2.0.0)](https://javadoc.io/doc/com.github.hemantsonu20/json-merge)
 
 # json-merge
 A light weight library to merge two json objects into a single json object.
